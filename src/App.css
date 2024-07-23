@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.paginationWrapper {
+  overflow-y: scroll;
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: end;
+}
+.paginationWrapper button {
+  width: 24px;
+  height: 24px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 32px; 
+}
+
+.inputSearch {
+  background-color: #cfcfcf;
+  color: black;
+}

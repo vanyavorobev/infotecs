@@ -1,0 +1,96 @@
+
+.tableWrapper {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fafafa;
+    color: #000000;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 16px;
+    table-layout: fixed;
+}
+.tableWrapper tr{
+    width: 100%;
+    display:flex;
+}
+.tableWrapper td, th{
+    flex-basis:100%;
+    flex-grow:2;
+    display: block;
+    padding: 1rem;
+    text-align:left;
+}
+.tableWrapper tbody {
+    background-color: #ffffff;
+    display: block; 
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+.tableWrapper thead {
+    display: block;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+.tableWrapper thead::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.tableWrapper thead::-webkit-scrollbar-thumb {
+    box-shadow: none;
+}
+
+.tableHeader {
+    cursor: default;
+    background-color: #fafafa;
+    border-radius: 16px 16px 0 0;
+}
+.tableHeader th:not(:first-child) {
+    position: relative;
+}
+.tableHeader th:not(:first-child)::before {
+    position: absolute;
+    left: 0;
+    content: " ";
+    width: 2px;
+    background-color: #f0f0f0;
+    height: 1.6em;
+    inset-inline-end: 0;
+}
+.tableHeader th:first-child {
+    border-start-start-radius: 16px;
+}
+.tableHeader th:last-child {
+    border-start-end-radius: 16px;
+}
+
+
+.tableRow {
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    transition: background-color 0.3s;
+}
+.tableRow:last-child td:first-child {
+    border-end-start-radius: 16px;
+}
+.tableRow:last-child td:last-child {
+    border-end-end-radius: 16px;
+}
+.tableRow:hover {
+    background-color: #fafafa;
+}
+
+.tableCell {
+    padding: 16px;
+    text-align: start;
+}
+
+.tableWrapper tfoot {
+    scrollbar-color: transparent transparent;
+}
+.tableWrapper tfoot::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.tableWrapper tfoot::-webkit-scrollbar-thumb {
+    box-shadow: none;
+}
